@@ -15,14 +15,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: kPrimaryColor,
-        elevatedButtonTheme: ElevatedButtonThemeData(
-          style: TextButton.styleFrom(
-            backgroundColor: Colors.red[900],
-          ),
+        primaryColor: Color.fromARGB(255, 4, 125, 141),
+        appBarTheme: const AppBarTheme(
+          elevation: 0,
         ),
-        textSelectionTheme:
-            TextSelectionThemeData(cursorColor: Colors.redAccent),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+        textSelectionTheme: TextSelectionThemeData(cursorColor: KtextField),
       ),
       home: const LoginPage(),
     );

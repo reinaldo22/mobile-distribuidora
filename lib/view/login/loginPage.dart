@@ -67,11 +67,16 @@ class _LoginPageState extends State<LoginPage> {
                         children: [
                           TextButton(
                             onPressed: () {
-                              Navigator.of(context).pushReplacement(
-                                  MaterialPageRoute(
-                                      builder: (context) => Signup()));
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Signup()),
+                              );
                             },
-                            child: Text("Cadastre-se"),
+                            child: Text(
+                              "Cadastre-se",
+                              style: TextStyle(color: kPrimaryColor),
+                            ),
                           ),
                         ],
                       ),
